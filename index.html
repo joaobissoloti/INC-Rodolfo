@@ -3,6 +3,11 @@
     <title>Sistema da INC</title>
 </head>
     <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
         a.heads:hover{
             color: gray;
             border-color: #fcda1f;
@@ -18,17 +23,106 @@
             padding-left: 20px;
         }
         div.init{
-            background-color: black;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 180px;
+            margin-left: 180px;
+            border-bottom: #fcda1f solid; width: 850px;
         }
         img.logo-inc{
-            margin-left: 1140px;
+            margin-left: 1129px;
+            margin-top: 13px;
+            margin-bottom: -42px;
+            scale: 1.2;
+        }
+        div.information{
+            padding-left: 50px;
+        }
+        body.teste{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvMBR7JOp3Pqp70Rq4EznOY9y7mvB9YsZevW9XCadh-w&s);
+            background-repeat: no-repeat;
+        }
+        .btn {
+            border: 2px gray solid;
+            width: 280px;
+            height: 50px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+        button.btn:hover{
+            background-color: gray;
+        }
+        section.speak-life{
+            padding-left: 150px;
+            font-size: 30px;
+        }
+        textarea.speak-lifetext{
+            width: 500px;
+            height: 150px;
+            margin-left: -150px;
+            margin-top: -10px; 
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: 2px gray solid;
+        }
+        input.speak-button{
+            border: 2px gray solid;
+            width: 509px;
+            height: 30px;
+            font-size: 18px;
+            background-color: black;
+            color: white;
+            margin-left: -151px;
+            margin-top: 15px;
+            
+        }
+        a.informs{
+            font-size: 20px;
+        }
+        .div-pray{
+            width: 505px;
+            height: 156px;
+        }
+        p.pray{
+            margin-top: -50px;
+            margin-bottom: 10px;
+            margin-left: -150px;
+        }
+        #background-inc{
+            background-image: url(https://wallpaperaccess.com/full/1384336.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+        }
+        div.bkg-pray{
+            width: 300px;
+            height: 300px;
+        }
+        .speak1{
+            border: 2px gray solid;
+            width: 508px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+        }
+        #button-pray:hover{
+            color: white;
+            background-color: gray;
+        }
+        p.restart{
+            padding: 8px;
+        }
+        #restart{
+            margin-bottom: -5px;
         }
     </style>
     <header>
         <div class="init">
-            <img class="logo-inc" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvMBR7JOp3Pqp70Rq4EznOY9y7mvB9YsZevW9XCadh-w&s">
             <ul>
-                <li><a class="heads" style="float:left;" href="https://www.instagram.com/igrejanocinema/">Home</a></li>
+                <li><a class="heads" href="https://www.instagram.com/igrejanocinema/">Home</a></li>
                 <li><a class="heads" href="https://www.instagram.com/igrejanocinema/">Events</a></li>
                 <li><a class="heads" href="https://www.instagram.com/igrejanocinema/">Home Churchs</a></li>
                 <li><a class="heads" href="https://www.instagram.com/igrejanocinema/">Sessions</a></li>
@@ -37,6 +131,28 @@
             
         </div>
     </header>
-<body>
-    
+    <div id="background-inc">
+<body class="teste">
+    <div class="body">
+    </br></br></br></br>
+    </div>
+    <div class="information">
+        <p class="restart"><button class="btn"><a class="informs" href="https://www.instagram.com/igrejanocinema/">Latest News</a></button></p>
+        <p class="restart"><button class="btn"><a class="informs"  href="https://www.instagram.com/igrejanocinema/">Be a volunteer</a></button></p>
+        <p class="restart" id="restart"><button class="btn"><a class="informs"  href="https://www.instagram.com/igrejanocinema/">Schedule</a></button></p>
+    </div>
+</br></br></br></br>
+<div class="bkg-pray">
+    <div class="div-pray">
+        <section class="speak-life">
+                <p class="pray"><input class="speak1" type="button" value="Speak Life"></p>
+                <textarea class="speak-lifetext" id="border" placeholder="Write your pray!">
+                </textarea></br>
+            <action>
+                <a href="https://www.instagram.com/igrejanocinema/"><input class="speak-button" id="button-pray" type="submit" value="Send!"></a>
+            </action>
+        </section>
+    </div>
+
+</div>
 </body>
